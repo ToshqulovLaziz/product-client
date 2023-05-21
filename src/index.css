@@ -61,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Poppins';
+    font-style: normal;
     font-weight: 400;
     background-color: var(--backgroundPrimary);
     /* color: var(--colorPrimary); */
