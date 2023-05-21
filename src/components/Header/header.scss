@@ -2,6 +2,9 @@
   display: none;
 }
 .site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 999;
   padding: 19px 0 18px 0;
   background-color: var(--backgroundPrimary);
@@ -21,13 +24,13 @@
   }
   &__btn {
     padding: 9px 22px 8px 24px;
-    font-weight: 600;
     font-size: 16px;
+    font-weight: 600;
     line-height: 24px;
-    color: #FFFFFF;
     border: none;
     background-color: var(--btnBg);
     border-radius: 4px;
+    color: var(--colorPrimary);
     border: 1px solid #BCD0E5;
     &:hover {
         color: #173A56;
@@ -51,20 +54,16 @@
     align-items: center;
     column-gap: 25px;
   }
-  
-}
-.site-navber__item--link {
-    box-sizing: border-box;
-    font-size: 16px;
+  &__item--link {
+    font-weight: 400 !important;
+    font-size: 15px;
     line-height: 28px;
-    cursor: pointer;
     color: var(--maniTextColor);
-    &:hover{
-        font-weight: 600;
-        color: #c32323;
-        font-size: 15px;
-        color: var(--maniTextColor);
+    &:hover, &:active {
+      color: coral;
     }
+  }
+  
 }
 
   .app {
@@ -80,10 +79,6 @@
             fill: var(--colorPrimary);
         }
       }
-    }
-
-    .btn{
-        text-transform: capitalize;
     }
 }
 
@@ -102,15 +97,27 @@
   }
   .site-header__end {
     position: absolute;
-    top: 13%;
-    right: 0%;
+    top: 100%;
+    left: 0%;
     display: flex;
     flex-direction: column;
+    text-align: start;
     padding: 20px 50px;
-    background-color: #c32323;
+    color: var(--mainTextColor);
+    background-color: var(--backgroundPrimary);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     row-gap: 20px;
     z-index: 999;
   } 
+  .app--dark {
+    .site-header__end {
+      background-color: var(--mainBg);
+      color: var(--colorPrimary);
+    }
+    .site-navbar_toggle--btn svg {
+      fill: var(--colorPrimary);
+    }
+  }
   .site-navbar__list {
     display: flex;
     align-items: center;
@@ -119,7 +126,6 @@
   }
   .site-navbar__item {
     width: 100%;
-    border-bottom: 1px solid #000;
   }
   .showtonav {
     display: flex;

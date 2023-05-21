@@ -51,12 +51,12 @@ const  Header = () => {
                 isNavShowing ? "showtonav" : "hidetonav"
               }`}
             >
-              <nav className="site-navbar d-flex align-items-center">
+              <nav className="site-navbar">
                 <ul className="site-navbar__list">
                   {navbarData.map((nav) => (
                     <li key={nav.id} className="site-navbar__item">
                       <NavLink
-                        className="site-navber__item--link"
+                        className="site-navbar__item--link nav-link"
                         to={nav.path}
                       >
                         {nav.name}

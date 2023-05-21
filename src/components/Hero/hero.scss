@@ -1,5 +1,5 @@
 .hero {
-  margin-top: 46px;
+  margin-top: 96px;
   background-color: var(--colorPrimary);
 
   &-wrapper {
@@ -41,8 +41,8 @@
       border: none;
       background-color: var(--btnBg);
       border-radius: 4px;
+      border: 1px solid #bcd0e5;
       &:hover {
-        border: 1px solid #bcd0e5;
         color: #173a56;
         background-color: var(--backgroundPrimary);
       }
@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 1000px) {
     .hero{
-        margin-top: 46px;
+        margin-top: 96px;
 
         &-wrapper{
             flex-direction: column-reverse;
