@@ -1,0 +1,250 @@
+.contact-section {
+  padding-bottom: 150px;
+  background-image: url("../../assets/images/contact-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &__wrapper {
+    padding-top: 53px;
+  }
+
+  &__start {
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #22343d;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 9px;
+    width: 542px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343d;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+  }
+
+  &__item:nth-child(2) {
+    align-items: center;
+  }
+
+  &__item--text {
+    width: 281px;
+    height: 53px;
+    margin: 0 41px 0 41px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 15px #173a561a;
+    padding: 15px 17px 14px 25px;
+    border-radius: 26.5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2f281e;
+  }
+
+  &__item--message-circle {
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .item1 {
+    top: calc(50% - 5px);
+    left: calc(50% - 51px);
+  }
+
+  .item2 {
+    top: calc(50% + 18px);
+    left: calc(50% + 20px);
+  }
+
+  .item3 {
+    top: calc(50% - 5px);
+    left: calc(50% + 9px);
+  }
+
+  .item4 {
+    top: calc(50% + 18px);
+    left: calc(75% + 20px);
+  }
+
+  &__item--message-circle2 {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .item1-2 {
+    top: calc(100% - 36px);
+    left: calc(25% + 52px);
+  }
+
+  .item2-2 {
+    top: calc(50% + 40px);
+    left: calc(25% + 146px);
+  }
+
+  .item3-2 {
+    top: calc(50% + 12px);
+    left: calc(25% + 146px);
+  }
+
+  .item4-2 {
+    top: calc(50% + 40px);
+    left: calc(75% + 40px);
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 63px;
+    padding: 15px 30px;
+    border: none;
+    background-color: #02897a;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  .row {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-section {
+    background-image: url("../../assets/images/contact-bg.png");
+    background-position: top center;
+    background-size: contain;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .row {
+      display: block;
+    }
+
+    .column {
+      display: none;
+    }
+
+    &__item:nth-child(1) {
+      margin-top: 30px;
+    }
+
+    &__item {
+      margin-bottom: 32px;
+    }
+
+    &__item--message-circle,
+    &__item--message-circle2 {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-section {
+    &__title {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 28px;
+      line-height: 43px;
+    }
+    &__subtitle {
+      margin: 0 auto;
+      margin-top: 0;
+      margin-bottom: 9px;
+      width: 400px;
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    &__item:nth-child(1) {
+      margin-top: 25px;
+    }
+
+    &__item {
+      margin-bottom: 26px;
+    }
+
+    &__img {
+      width: 89px;
+      height: 89px;
+    }
+
+    &__btn {
+      display: block;
+      margin: 0 auto;
+      margin-top: 55px;
+      padding: 12px 26px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contact-section {
+    padding-bottom:  100px; ;
+    background-image: url("../../assets/images/contact-bg-mobile.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &__title {
+      margin-bottom: 8px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    &__subtitle {
+      margin-bottom: 40px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &__item--text {
+        height: 62px;
+        width: 229px;
+        margin:0 35px;
+        padding: 12px 20px 10px 20px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    
+}
+}
