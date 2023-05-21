@@ -35,9 +35,12 @@
     /* colors */
     --colorPrimary: #fff;
     --colorSecondary: #000;
+    --mainTextColor: #22343D;
     /* background */
+    --mainBg:#1F2E35;
     --backgroundPrimary: #fff;
     --backgroundSecondary: #000;
+    --btnBg: #02897A;
 }
 
 html {
@@ -87,7 +90,7 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1140px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 20px;

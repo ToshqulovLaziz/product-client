@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import HomePage from "../pages/Home";
+import { navbarData } from "../utils/navbar";
 
 const Root = () => {
   return (
@@ -10,7 +10,11 @@ const Root = () => {
       <Header/>
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<HomePage />} />
+        {
+          navbarData.map((nav) => (
+            <Route key={nav.id} path={nav.path} element={<nav.element/>} />
+          ))
+        }
       </Routes>
       <Footer/>
     </React.Fragment>
