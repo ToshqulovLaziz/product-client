@@ -20,7 +20,7 @@
     column-gap: 24px;
   }
   &__btn {
-    padding: 10px 23px 9px 25px;
+    padding: 9px 22px 8px 24px;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -28,8 +28,8 @@
     border: none;
     background-color: var(--btnBg);
     border-radius: 4px;
+    border: 1px solid #BCD0E5;
     &:hover {
-        border: 1px solid #BCD0E5;
         color: #173A56;
         background-color: var(--backgroundPrimary);
     }
@@ -57,26 +57,27 @@
     box-sizing: border-box;
     font-size: 16px;
     line-height: 28px;
+    cursor: pointer;
     color: var(--maniTextColor);
-    &:hover, &:active{
+    &:hover{
         font-weight: 600;
+        color: #c32323;
+        font-size: 15px;
         color: var(--maniTextColor);
     }
 }
-.app {
+
+  .app {
     &--light {
         background-color: var(--backgroundPrimary);
         color: var(--colorSecondary);
     }
-
     &--dark {
         background-color: var(--mainBg);
         color: var(--colorPrimary);
-    }
-    &--dark {
-      .site-header__link {
-        .site-header__link--logo path:nth-child(5){
-          fill: var(--colorPrimary);
+        .site-header__link {
+          .site-header__link--logo path:nth-child(5){
+            fill: var(--colorPrimary);
         }
       }
     }
