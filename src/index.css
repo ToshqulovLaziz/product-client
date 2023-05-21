@@ -32,14 +32,17 @@
     url("./assets/fonts/poppins-v20-latin-700.woff") format("woff");
 }
 :root {
-  /* colors */
-  --colorPrimary: #fff;
-  --colorSecondary: #000;
-  /* background */
-  --backgroundPrimary: #fff;
-  --backgroundSecondary: #000;
   --mainText: #22343d;
   --mainTextHover: #02897a;
+    /* colors */
+    --colorPrimary: #fff;
+    --colorSecondary: #000;
+    --mainTextColor: #22343D;
+    /* background */
+    --mainBg:#1F2E35;
+    --backgroundPrimary: #fff;
+    --backgroundSecondary: #000;
+    --btnBg: #02897A;
 }
 
 html {
@@ -55,14 +58,16 @@ html {
 }
 
 body {
-  margin: 0;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-family: "Poppins";
-  font-weight: 400;
-  background-color: var(--backgroundPrimary);
-  /* color: var(--colorPrimary); */
+
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--backgroundPrimary);
+    /* color: var(--colorPrimary); */
 }
 
 main {
@@ -88,12 +93,12 @@ img {
 }
 
 .container {
-  width: 100%;
-  max-width: 1240px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+    width: 100%;
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 ul,
